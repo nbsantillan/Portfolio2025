@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio de Noe</title>
+    <!-- Para nuestro CSS externo -->
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <header id="main-header">
+        <h1> Portfolio de Noelia Belén Santillán</h1>
+    </header>
+
+    <main>
+        <!-- Presentación + imagen propia -->
+        <section id="presentacion" class="seccion" >
+            <p>Nutricionista y estudiante de desarrollo de software. Mi enfoque es crear soluciones digitales que mejoren la vida de las personas, combinando mi experiencia en salud con mi pasión por la tecnología.</p>
+            <img src="img/cv_noe.jpg" alt="Foto de Noelia Belén Santillán" class="imagen-perfil">
+        </section>
+
+        <!-- Tabla para enumerar las tecnologías que conozco, las que quiero conocer y mis hobbies -->
+        <section id="tabla" class="seccion" >
+            <h2>Tecnologías & Hobbies</h2>
+            <table class="tabla-estilo">
+                <thead>
+                    <tr>
+                        <th>Aprendí</th>
+                        <th>Quiero aprender</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML, CSS, C#, Python</td>
+                        <td>JavaScript, React</td>
+                        <td>Viajar, aprender nuevos lenguajes, leer</td>
+                    </tr>
+                    <tr>
+                        <td>Git, GitHub</td>
+                        <td>Node.js</td>
+                        <td>Cocinar </td>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>MongoDB</td>
+                        <td> Hacer ejercicio físico, bailar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" class="seccion" >
+            <h2>¡Contactáme!</h2>
+            <!-- Formulario sencillo HTML sin funcionabilidad -->
+            <form id="mi_formulario">
+
+                <!-- Elementos de Entrada (pedimos datos) -->
+                <label for="nombre">Nombre:</label><br> 
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido">
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono">
+
+                <!-- Elementos de envío de datos -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Posibles mejoras:
+         - Agregar íconos en la tabla para hacerlo más visual.
+         - Incluir validaciones básicas en el formulario..
+         - Estilizar mejor el formulario en cuanto a formato.
+         - Agregar un footer con redes sociales. -->
+</body>
+</html>
